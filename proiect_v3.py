@@ -4,6 +4,7 @@ import os.path
 
 #radul e mare mafiot
 #cel mai mare mafiot e chiar radul
+#rada rada bio bio
 def connect_db():
     return sqlite3.connect('big_database.db')
 
