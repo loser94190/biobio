@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, url_for,flash
 import sqlite3
 import os.path
 
-
+#radul e boss
 def connect_db():
     return sqlite3.connect('big_database.db')
 
