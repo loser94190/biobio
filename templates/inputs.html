@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+<form action={{url_for('inputs')}} method="post" >
+  Numme Restaurant:<br>
+  <input type="text" name="restaurant_name"><br>
+  Tip Produs:<br>
+    <select name="food">
+    <option value="drinks">Bauturi</option>
+    <option value="dessert">Desert</option>
+    <option value="fel_1">Fel I</option>
+    <option value="fel_2">Fel II</option>
+  </select><br>
+  Nume Produs:<br>
+  <input type="text" name="food_name"><br>
+  Greutate Produs(g/ml):<br>
+  <input type="text" name="food_weight"><br>
+  Pret:<br>
+  <input type="text" name="price"><br>
+  <br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>

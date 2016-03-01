@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <title>adaugare_restaurante</title>
+</head>
+<body>
+<form action={{url_for('add_rest')}} method="post" >
+    Numme Restaurant:<br>
+    <input type="text" name="restaurant_name"><br>
+    Coord_1<br>
+    <input type="text" name="coord1"><br>
+    Coord_2<br>
+    <input type="text" name="coord2"><br>
+    <br><br>
+  <input type="submit">
+</form>
+</body>
+</html>

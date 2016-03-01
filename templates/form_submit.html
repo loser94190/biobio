@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handle POST requests with Flask - form_submit</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>POST request with Flask</h1>
+            </div>
+            <div id="content">
+                <form method="post" action="{{ url_for('search_by_input') }}">
+                  <label for="mancare">Introduceti felurile dorite, separate prin ','</label>
+                  <input type="text" name="mancare" /><br />    <!-- yourname - mancare -->
+                  <label for="numar_pers">Cate persoane sunteti?</label>
+                  <input type="text" name="numar_pers" /><br />      <!-- youremail - numar_pers -->
+                  <input type="submit" />
+                </form>
+            </div>
+            <div class="title">
+                <h1>Flask code</h1>
+            </div>
+                <code><pre>
+@app.route('/')
+def form():
+    return render_template('form_submit.html')
+                </pre></code>
+            </div>
+        </div>
+    </body>
+</html>
