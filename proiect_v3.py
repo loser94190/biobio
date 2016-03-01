@@ -2,9 +2,7 @@ from flask import Flask, render_template, request, url_for,flash
 import sqlite3
 import os.path
 
-#radul e mare mafiot
-#cel mai mare mafiot e chiar radul
-#rada rada bio bio
+
 def connect_db():
     return sqlite3.connect('big_database.db')
 
@@ -78,7 +76,7 @@ def add_rest():
         r_name = request.form['restaurant_name']
         coord_1 = request.form['coord1']
         coord_2 = request.form['coord2']
-        query_cursor.execute("INSERT INTO big_restaurant(nume,coord1,coord2) VALUES(?,?,?,?)", (None, r_name, coord_1, coord_2))
+        query_cursor.execute("INSERT INTO big_restaurant(nume,coord1,coord2) VALUES(?,?,?)", (r_name, coord_1, coord_2))
         conn.commit()
     return render_template('add_rest.html')
 
