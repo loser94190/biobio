@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for,flash
+from flask import Flask, render_template, request, url_for, flash
 import sqlite3
 import os.path
 
@@ -44,16 +44,22 @@ def hello():
 @app.route('/form_submit', methods=['POST', 'GET'])
 def search_by_input():
     count = 0
+    money_count = 0
+    price_list=[]
+    r_returner_price = 0
+    r_items_price = 0
     conn = sqlite3.connect(db_path)
     curs = conn.cursor()
     string1 = request.form['mancare']
     nr_pers = request.form['numar_pers']
+    money = request.form ['bani']
     list1 = string1.split(',')
     list1_len = len(list1)
     rest_list = ['gicahagi']
     good_rest_list = []
     for r in rest_list:
         r_returned = curs.execute("SELECT food FROM " + r )
+        #r_price = curs.execute("SELECT price FROM " + r)
         r_items = r_returned.fetchall()
         temp_list = []
         for k in range(len(r_items)):
@@ -64,8 +70,19 @@ def search_by_input():
             else:
                 pass
         if count == list1_len:
-            good_rest_list.append(r)
-    return render_template('form_action_2.html', lista_rest = good_rest_list)
+            for j in range(list1_len):
+                r_returned = curs.execute("SELECT price FROM " + r +" WHERE food=" + "'" + list1[j] + "'" + ';')
+                r_items_price = r_returned.fetchone()
+                price_list.append(''.join(str(r_items_price)))
+            for x in range(len(price_list)):
+                price_list_final = str(price_list[x])
+                forbiden_char = '(),'
+                for n in range(len(forbiden_char)):
+                    price_list_final= price_list_final.replace(forbiden_char[n],'')
+                money_count = money_count + float(price_list_final)
+            if money_count <= float(money):
+                good_rest_list.append(r)
+    return render_template('form_action_2.html', lista_rest=good_rest_list, debug_value=money_count)
 
 
 @app.route('/add_rest', methods=['POST', 'GET'])
