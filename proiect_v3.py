@@ -95,10 +95,11 @@ def add_rest():
         conn = sqlite3.connect(db_rest_path)
         query_cursor = conn.cursor()
         r_name = request.form['restaurant_name']
-        coord_1 = request.form['coord1']
-        coord_2 = request.form['coord2']
-        query_cursor.execute("INSERT INTO big_restaurant(nume,coord1,coord2) VALUES(?,?,?)", (r_name, coord_1, coord_2))
-        conn.commit()
+        if r_name:
+            coord_1 = request.form['coord1']
+            coord_2 = request.form['coord2']
+            query_cursor.execute("INSERT INTO big_restaurant(nume,coord1,coord2) VALUES(?,?,?)", (r_name, coord_1, coord_2))
+            conn.commit()
     return render_template('add_rest.html')
 
 
@@ -147,6 +148,13 @@ def list():
 
 
 
+@app.route('/geolocation', methods=['POST', 'GET'])
+def geolocation():
+    if request.method == 'GET':
+        return render_template('geolocation.html')
+    if request.method == 'POST':
+        location = request.form['pos']
+        return render_template('location.html', location=location)
 
 
 if __name__ == '__main__':
