@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, url_for, flash
 import sqlite3
 import os.path
 
+
 #radul e boss
 def connect_db():
     return sqlite3.connect('big_database.db')
@@ -43,23 +44,26 @@ def hello():
 
 @app.route('/form_submit', methods=['POST', 'GET'])
 def search_by_input():
-    count = 0
-    money_count = 0
-    price_list=[]
-    r_returner_price = 0
-    r_items_price = 0
+    rest_list = []
     conn = sqlite3.connect(db_path)
     curs = conn.cursor()
+    conn2 = sqlite3.connect(db_rest_path)
+    curs2 = conn2.cursor()
+    rest_list_pre = curs2.execute("SELECT nume FROM " + "'big_restaurant'")
+    restaurant_list_return = rest_list_pre.fetchall()
+    for t in restaurant_list_return:
+        rest_list.append(''.join(t))
     string1 = request.form['mancare']
     nr_pers = request.form['numar_pers']
     money = request.form ['bani']
     list1 = string1.split(',')
     list1_len = len(list1)
-    rest_list = ['gicahagi']
     good_rest_list = []
     for r in rest_list:
-        r_returned = curs.execute("SELECT food FROM " + r )
-        #r_price = curs.execute("SELECT price FROM " + r)
+        count = 0
+        money_count = 0
+        price_list = []
+        r_returned = curs.execute("SELECT food FROM " + r)
         r_items = r_returned.fetchall()
         temp_list = []
         for k in range(len(r_items)):
@@ -78,11 +82,11 @@ def search_by_input():
                 price_list_final = str(price_list[x])
                 forbiden_char = '(),'
                 for n in range(len(forbiden_char)):
-                    price_list_final= price_list_final.replace(forbiden_char[n],'')
+                    price_list_final= price_list_final.replace(forbiden_char[n], '')
                 money_count += float(price_list_final)
             if money_count <= (float(money)/float(nr_pers)):
                 good_rest_list.append(r)
-    return render_template('form_action_2.html', lista_rest=good_rest_list, debug_value=money_count)
+    return render_template('form_action_2.html', lista_rest=good_rest_list, debug_value=money_count*float(nr_pers), lista_lista = rest_list)
 
 
 @app.route('/add_rest', methods=['POST', 'GET'])
@@ -140,6 +144,9 @@ def list():
         return render_template('list.html', table_name='', increment=0)
     if request.method == 'GET':
         return render_template('list.html', table_name='', increment=0)
+
+
+
 
 
 if __name__ == '__main__':

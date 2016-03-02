@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1681719-acd7-4b47-935a-d78f0bfe6142" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/get_data.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/big_database.db" afterPath="$PROJECT_DIR$/big_database.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurant_master.db" afterPath="$PROJECT_DIR$/restaurant_master.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proiect_v3.py" afterPath="$PROJECT_DIR$/proiect_v3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/form_action_2.html" afterPath="$PROJECT_DIR$/templates/form_action_2.html" />
     </list>
     <ignored path="proiect_v3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +21,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/proiect_v3$proiect_v3.coverage" NAME="proiect_v3 Coverage Results" MODIFIED="1456904965645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/proiect_v3$proiect_v3.coverage" NAME="proiect_v3 Coverage Results" MODIFIED="1456919068678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -31,30 +35,42 @@
       <file leaf-file-name="proiect_v3.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/proiect_v3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0921986">
-              <caret line="82" column="59" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.41449276">
+              <caret line="84" column="81" selection-start-line="84" selection-start-column="81" selection-end-line="84" selection-end-column="81" />
               <folding>
                 <element signature="e#0#65#0" expanded="true" />
-                <marker date="1456905571531" expanded="true" signature="293:410" placeholder="CREATE TABLE... missing_value" />
-                <marker date="1456905571531" expanded="true" signature="583:666" placeholder="INSERT INTO missing_value... " />
-                <marker date="1456905571531" expanded="true" signature="1753:1770" placeholder="SELECT food missing_value" />
-                <marker date="1456905571531" expanded="true" signature="1811:1828" placeholder="SELECT price... " />
-                <marker date="1456905571531" expanded="true" signature="1811:1829" placeholder="SELECT price... missing_value" />
-                <marker date="1456905571531" expanded="true" signature="2337:2354" placeholder="SELECT price... " />
-                <marker date="1456905571531" expanded="true" signature="2337:2355" placeholder="SELECT price... missing_value" />
-                <marker date="1456905571531" expanded="true" signature="2337:2367" placeholder="SELECT price... missing_valueWHE" />
-                <marker date="1456905571531" expanded="true" signature="2337:2375" placeholder="SELECT price... missing_valueWHERE" />
-                <marker date="1456905571531" expanded="true" signature="2337:2378" placeholder="SELECT price... missing_valueWHERE" />
-                <marker date="1456905571531" expanded="true" signature="2337:2381" placeholder="SELECT price... missing_valueWHERE" />
-                <marker date="1456905571531" expanded="true" signature="2337:2398" placeholder="SELECT price... missing_valueWHERE" />
-                <marker date="1456905571531" expanded="true" signature="3398:3458" placeholder="INSERT INTO big_restaurant... " />
-                <marker date="1456905571531" expanded="true" signature="3763:3868" placeholder="SELECT name sqlite_master" />
-                <marker date="1456905571531" expanded="true" signature="4179:4250" placeholder="INSERT INTO missing_value... " />
-                <marker date="1456905571531" expanded="true" signature="4360:4478" placeholder="CREATE TABLE... missing_value" />
-                <marker date="1456905571531" expanded="true" signature="4777:4848" placeholder="INSERT INTO missing_value... " />
-                <marker date="1456905571531" expanded="true" signature="5244:5328" placeholder="SELECT name sqlite_master" />
-                <marker date="1456905571531" expanded="true" signature="5417:5431" placeholder="SELECT * FRO... missing_value" />
+                <marker date="1456919661290" expanded="true" signature="294:411" placeholder="CREATE TABLE... missing_value" />
+                <marker date="1456919661290" expanded="true" signature="584:667" placeholder="INSERT INTO missing_value... " />
+                <marker date="1456919661290" expanded="true" signature="1495:1511" placeholder="SELECT nume " />
+                <marker date="1456919661290" expanded="true" signature="1495:1512" placeholder="SELECT nume missing_value" />
+                <marker date="1456919661290" expanded="true" signature="1495:1514" placeholder="SELECT nume " />
+                <marker date="1456919661290" expanded="true" signature="1495:1533" placeholder="SELECT nume " />
+                <marker date="1456919661290" expanded="true" signature="1984:2001" placeholder="SELECT food missing_value" />
+                <marker date="1456919661290" expanded="true" signature="2509:2526" placeholder="SELECT price... " />
+                <marker date="1456919661290" expanded="true" signature="2509:2527" placeholder="SELECT price... missing_value" />
+                <marker date="1456919661290" expanded="true" signature="2509:2539" placeholder="SELECT price... missing_valueWHE" />
+                <marker date="1456919661290" expanded="true" signature="2509:2547" placeholder="SELECT price... missing_valueWHERE" />
+                <marker date="1456919661290" expanded="true" signature="2509:2550" placeholder="SELECT price... missing_valueWHERE" />
+                <marker date="1456919661290" expanded="true" signature="2509:2553" placeholder="SELECT price... missing_valueWHERE" />
+                <marker date="1456919661290" expanded="true" signature="2509:2570" placeholder="SELECT price... missing_valueWHERE" />
+                <marker date="1456919661290" expanded="true" signature="3611:3671" placeholder="INSERT INTO big_restaurant... " />
+                <marker date="1456919661290" expanded="true" signature="3976:4081" placeholder="SELECT name sqlite_master" />
+                <marker date="1456919661290" expanded="true" signature="4392:4463" placeholder="INSERT INTO missing_value... " />
+                <marker date="1456919661290" expanded="true" signature="4573:4691" placeholder="CREATE TABLE... missing_value" />
+                <marker date="1456919661290" expanded="true" signature="4990:5061" placeholder="INSERT INTO missing_value... " />
+                <marker date="1456919661290" expanded="true" signature="5457:5541" placeholder="SELECT name sqlite_master" />
+                <marker date="1456919661290" expanded="true" signature="5630:5644" placeholder="SELECT * FRO... missing_value" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_data.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/get_data.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,7 +78,7 @@
       <file leaf-file-name="add_rest.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/add_rest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.774194">
+            <state vertical-scroll-proportion="0.0">
               <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
               <folding />
             </state>
@@ -72,8 +88,8 @@
       <file leaf-file-name="form_action_2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/form_action_2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.645162">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -82,7 +98,7 @@
       <file leaf-file-name="form_submit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/form_submit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.967742">
+            <state vertical-scroll-proportion="0.0">
               <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding />
             </state>
@@ -92,7 +108,7 @@
       <file leaf-file-name="inputs.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/inputs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.67742">
+            <state vertical-scroll-proportion="0.0">
               <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="24" selection-end-column="7" />
               <folding />
             </state>
@@ -146,6 +162,8 @@
         <option value="$PROJECT_DIR$/templates/inputs.html" />
         <option value="$PROJECT_DIR$/templates/add_rest.html" />
         <option value="$PROJECT_DIR$/templates/form_submit.html" />
+        <option value="$PROJECT_DIR$/templates/geolocation.html" />
+        <option value="$PROJECT_DIR$/templates/get_data.html" />
         <option value="$PROJECT_DIR$/templates/form_action_2.html" />
         <option value="$PROJECT_DIR$/proiect_v3.py" />
       </list>
@@ -187,7 +205,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,7 +254,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -499,7 +517,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456905284760</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Am adaugat cautarea de pret si am implementat numarul de persoane">
+      <created>1456905718761</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1456905718761</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -515,24 +539,24 @@
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25937834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32845894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2561629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18764044" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -550,7 +574,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="radul e boss" />
     <MESSAGE value="Am adaugat cautarea de pret" />
-    <option name="LAST_COMMIT_MESSAGE" value="Am adaugat cautarea de pret" />
+    <MESSAGE value="Am adaugat cautarea de pret si am implementat numarul de persoane" />
+    <option name="LAST_COMMIT_MESSAGE" value="Am adaugat cautarea de pret si am implementat numarul de persoane" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -563,25 +588,114 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#65#0" expanded="true" />
-            <marker date="1456905571531" expanded="true" signature="293:410" placeholder="CREATE TABLE... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="583:666" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="1753:1770" placeholder="SELECT food missing_value" />
-            <marker date="1456905571531" expanded="true" signature="1811:1828" placeholder="SELECT price... " />
-            <marker date="1456905571531" expanded="true" signature="1811:1829" placeholder="SELECT price... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="2337:2354" placeholder="SELECT price... " />
-            <marker date="1456905571531" expanded="true" signature="2337:2355" placeholder="SELECT price... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="2337:2367" placeholder="SELECT price... missing_valueWHE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2375" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2378" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2381" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2398" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="3398:3458" placeholder="INSERT INTO big_restaurant... " />
-            <marker date="1456905571531" expanded="true" signature="3763:3868" placeholder="SELECT name sqlite_master" />
-            <marker date="1456905571531" expanded="true" signature="4179:4250" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="4360:4478" placeholder="CREATE TABLE... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="4777:4848" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="5244:5328" placeholder="SELECT name sqlite_master" />
-            <marker date="1456905571531" expanded="true" signature="5417:5431" placeholder="SELECT * FRO... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="294:411" placeholder="CREATE TABLE... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="584:667" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="1495:1511" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1495:1512" placeholder="SELECT nume missing_value" />
+            <marker date="1456919661290" expanded="true" signature="1495:1514" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1495:1533" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1984:2001" placeholder="SELECT food missing_value" />
+            <marker date="1456919661290" expanded="true" signature="2509:2526" placeholder="SELECT price... " />
+            <marker date="1456919661290" expanded="true" signature="2509:2527" placeholder="SELECT price... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="2509:2539" placeholder="SELECT price... missing_valueWHE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2547" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2550" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2553" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2570" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="3611:3671" placeholder="INSERT INTO big_restaurant... " />
+            <marker date="1456919661290" expanded="true" signature="3976:4081" placeholder="SELECT name sqlite_master" />
+            <marker date="1456919661290" expanded="true" signature="4392:4463" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="4573:4691" placeholder="CREATE TABLE... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="4990:5061" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="5457:5541" placeholder="SELECT name sqlite_master" />
+            <marker date="1456919661290" expanded="true" signature="5630:5644" placeholder="SELECT * FRO... missing_value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/get_data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_rest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/form_action_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/form_submit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/inputs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="1" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proiect_v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+            <marker date="1456919661290" expanded="true" signature="294:411" placeholder="CREATE TABLE... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="584:667" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="1495:1511" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1495:1512" placeholder="SELECT nume missing_value" />
+            <marker date="1456919661290" expanded="true" signature="1495:1514" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1495:1533" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1984:2001" placeholder="SELECT food missing_value" />
+            <marker date="1456919661290" expanded="true" signature="2509:2526" placeholder="SELECT price... " />
+            <marker date="1456919661290" expanded="true" signature="2509:2527" placeholder="SELECT price... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="2509:2539" placeholder="SELECT price... missing_valueWHE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2547" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2550" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2553" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2570" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="3611:3671" placeholder="INSERT INTO big_restaurant... " />
+            <marker date="1456919661290" expanded="true" signature="3976:4081" placeholder="SELECT name sqlite_master" />
+            <marker date="1456919661290" expanded="true" signature="4392:4463" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="4573:4691" placeholder="CREATE TABLE... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="4990:5061" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="5457:5541" placeholder="SELECT name sqlite_master" />
+            <marker date="1456919661290" expanded="true" signature="5630:5644" placeholder="SELECT * FRO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -640,25 +754,27 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="23" />
           <folding>
             <element signature="e#0#65#0" expanded="true" />
-            <marker date="1456905571531" expanded="true" signature="293:410" placeholder="CREATE TABLE... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="583:666" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="1753:1770" placeholder="SELECT food missing_value" />
-            <marker date="1456905571531" expanded="true" signature="1811:1828" placeholder="SELECT price... " />
-            <marker date="1456905571531" expanded="true" signature="1811:1829" placeholder="SELECT price... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="2337:2354" placeholder="SELECT price... " />
-            <marker date="1456905571531" expanded="true" signature="2337:2355" placeholder="SELECT price... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="2337:2367" placeholder="SELECT price... missing_valueWHE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2375" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2378" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2381" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2398" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="3398:3458" placeholder="INSERT INTO big_restaurant... " />
-            <marker date="1456905571531" expanded="true" signature="3763:3868" placeholder="SELECT name sqlite_master" />
-            <marker date="1456905571531" expanded="true" signature="4179:4250" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="4360:4478" placeholder="CREATE TABLE... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="4777:4848" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="5244:5328" placeholder="SELECT name sqlite_master" />
-            <marker date="1456905571531" expanded="true" signature="5417:5431" placeholder="SELECT * FRO... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="294:411" placeholder="CREATE TABLE... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="584:667" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="1495:1511" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1495:1512" placeholder="SELECT nume missing_value" />
+            <marker date="1456919661290" expanded="true" signature="1495:1514" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1495:1533" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1984:2001" placeholder="SELECT food missing_value" />
+            <marker date="1456919661290" expanded="true" signature="2509:2526" placeholder="SELECT price... " />
+            <marker date="1456919661290" expanded="true" signature="2509:2527" placeholder="SELECT price... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="2509:2539" placeholder="SELECT price... missing_valueWHE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2547" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2550" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2553" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2570" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="3611:3671" placeholder="INSERT INTO big_restaurant... " />
+            <marker date="1456919661290" expanded="true" signature="3976:4081" placeholder="SELECT name sqlite_master" />
+            <marker date="1456919661290" expanded="true" signature="4392:4463" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="4573:4691" placeholder="CREATE TABLE... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="4990:5061" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="5457:5541" placeholder="SELECT name sqlite_master" />
+            <marker date="1456919661290" expanded="true" signature="5630:5644" placeholder="SELECT * FRO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -717,25 +833,27 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#65#0" expanded="true" />
-            <marker date="1456905571531" expanded="true" signature="293:410" placeholder="CREATE TABLE... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="583:666" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="1753:1770" placeholder="SELECT food missing_value" />
-            <marker date="1456905571531" expanded="true" signature="1811:1828" placeholder="SELECT price... " />
-            <marker date="1456905571531" expanded="true" signature="1811:1829" placeholder="SELECT price... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="2337:2354" placeholder="SELECT price... " />
-            <marker date="1456905571531" expanded="true" signature="2337:2355" placeholder="SELECT price... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="2337:2367" placeholder="SELECT price... missing_valueWHE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2375" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2378" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2381" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2398" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="3398:3458" placeholder="INSERT INTO big_restaurant... " />
-            <marker date="1456905571531" expanded="true" signature="3763:3868" placeholder="SELECT name sqlite_master" />
-            <marker date="1456905571531" expanded="true" signature="4179:4250" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="4360:4478" placeholder="CREATE TABLE... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="4777:4848" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="5244:5328" placeholder="SELECT name sqlite_master" />
-            <marker date="1456905571531" expanded="true" signature="5417:5431" placeholder="SELECT * FRO... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="294:411" placeholder="CREATE TABLE... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="584:667" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="1495:1511" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1495:1512" placeholder="SELECT nume missing_value" />
+            <marker date="1456919661290" expanded="true" signature="1495:1514" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1495:1533" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1984:2001" placeholder="SELECT food missing_value" />
+            <marker date="1456919661290" expanded="true" signature="2509:2526" placeholder="SELECT price... " />
+            <marker date="1456919661290" expanded="true" signature="2509:2527" placeholder="SELECT price... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="2509:2539" placeholder="SELECT price... missing_valueWHE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2547" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2550" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2553" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2570" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="3611:3671" placeholder="INSERT INTO big_restaurant... " />
+            <marker date="1456919661290" expanded="true" signature="3976:4081" placeholder="SELECT name sqlite_master" />
+            <marker date="1456919661290" expanded="true" signature="4392:4463" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="4573:4691" placeholder="CREATE TABLE... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="4990:5061" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="5457:5541" placeholder="SELECT name sqlite_master" />
+            <marker date="1456919661290" expanded="true" signature="5630:5644" placeholder="SELECT * FRO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -804,63 +922,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/inputs.html">
+    <entry file="file://$PROJECT_DIR$/templates/form_submit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.67742">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="24" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/form_submit.html">
+    <entry file="file://$PROJECT_DIR$/templates/inputs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.967742">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="24" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/add_rest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.774194">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/get_data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/geolocation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.5161295">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/form_action_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.645162">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proiect_v3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0921986">
-          <caret line="82" column="59" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.41449276">
+          <caret line="84" column="81" selection-start-line="84" selection-start-column="81" selection-end-line="84" selection-end-column="81" />
           <folding>
             <element signature="e#0#65#0" expanded="true" />
-            <marker date="1456905571531" expanded="true" signature="293:410" placeholder="CREATE TABLE... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="583:666" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="1753:1770" placeholder="SELECT food missing_value" />
-            <marker date="1456905571531" expanded="true" signature="1811:1828" placeholder="SELECT price... " />
-            <marker date="1456905571531" expanded="true" signature="1811:1829" placeholder="SELECT price... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="2337:2354" placeholder="SELECT price... " />
-            <marker date="1456905571531" expanded="true" signature="2337:2355" placeholder="SELECT price... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="2337:2367" placeholder="SELECT price... missing_valueWHE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2375" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2378" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2381" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="2337:2398" placeholder="SELECT price... missing_valueWHERE" />
-            <marker date="1456905571531" expanded="true" signature="3398:3458" placeholder="INSERT INTO big_restaurant... " />
-            <marker date="1456905571531" expanded="true" signature="3763:3868" placeholder="SELECT name sqlite_master" />
-            <marker date="1456905571531" expanded="true" signature="4179:4250" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="4360:4478" placeholder="CREATE TABLE... missing_value" />
-            <marker date="1456905571531" expanded="true" signature="4777:4848" placeholder="INSERT INTO missing_value... " />
-            <marker date="1456905571531" expanded="true" signature="5244:5328" placeholder="SELECT name sqlite_master" />
-            <marker date="1456905571531" expanded="true" signature="5417:5431" placeholder="SELECT * FRO... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="294:411" placeholder="CREATE TABLE... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="584:667" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="1495:1511" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1495:1512" placeholder="SELECT nume missing_value" />
+            <marker date="1456919661290" expanded="true" signature="1495:1514" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1495:1533" placeholder="SELECT nume " />
+            <marker date="1456919661290" expanded="true" signature="1984:2001" placeholder="SELECT food missing_value" />
+            <marker date="1456919661290" expanded="true" signature="2509:2526" placeholder="SELECT price... " />
+            <marker date="1456919661290" expanded="true" signature="2509:2527" placeholder="SELECT price... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="2509:2539" placeholder="SELECT price... missing_valueWHE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2547" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2550" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2553" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="2509:2570" placeholder="SELECT price... missing_valueWHERE" />
+            <marker date="1456919661290" expanded="true" signature="3611:3671" placeholder="INSERT INTO big_restaurant... " />
+            <marker date="1456919661290" expanded="true" signature="3976:4081" placeholder="SELECT name sqlite_master" />
+            <marker date="1456919661290" expanded="true" signature="4392:4463" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="4573:4691" placeholder="CREATE TABLE... missing_value" />
+            <marker date="1456919661290" expanded="true" signature="4990:5061" placeholder="INSERT INTO missing_value... " />
+            <marker date="1456919661290" expanded="true" signature="5457:5541" placeholder="SELECT name sqlite_master" />
+            <marker date="1456919661290" expanded="true" signature="5630:5644" placeholder="SELECT * FRO... missing_value" />
           </folding>
         </state>
       </provider>
