@@ -79,8 +79,8 @@ def search_by_input():
                 forbiden_char = '(),'
                 for n in range(len(forbiden_char)):
                     price_list_final= price_list_final.replace(forbiden_char[n],'')
-                money_count = money_count + float(price_list_final)
-            if money_count <= float(money):
+                money_count += float(price_list_final)
+            if money_count <= (float(money)/float(nr_pers)):
                 good_rest_list.append(r)
     return render_template('form_action_2.html', lista_rest=good_rest_list, debug_value=money_count)
 
